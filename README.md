@@ -1,6 +1,19 @@
 ### Hi there 👋
 
 
+
+
+   Tasty dishes    
+
+Lorem, ipsum dolor sit amet consectetur adipisicin, eve perspiciatis alias? Eaque quis iste cupiditate usamus animi sequi ullam sint esse aspernatur eum, aut, minus ratio of ea quam. Quisquam voluptate nihil minus expedita distinctio rerum omnis fugit well.
+
+[Order Now](#order)
+
+![home image](https://food-shop-ecommerce.netlify.app/images/home-img.png)
+
+
+
+
 - 🔭 I'm currently working at Mentegoz Technologies located in Calicut as front-end-developer
 - 🔭 I’m completed  six months of internship frin techolas technologies pvt ltd
 - 🌱 I’m currently doing my graduation from bharathidasan university in bsc
