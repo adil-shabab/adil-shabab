@@ -1,2189 +1,252 @@
+   Tasty dishes      \*{ margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; font-family: 'nunito'; } :root{ --red: #ff3838; } .para{ font-size: 18px; } section{ padding: 80px 10px; } html{ scroll-behavior: smooth; } .orderbtn{ display: inline-block; padding: 8px 20px; border: 2px solid var(--red); color: var(--red); cursor: pointer; font-size: 18px; border-radius: 10px; position: relative; overflow: hidden; z-index: 0; } .orderbtn::before{ content: ""; position: absolute; top: 0; right: 0; width: 0%; height: 100%; background: var(--red); transition: 0.3s linear; z-index: -1; } .orderbtn:hover::before{ width: 100%; left: 0; color: #fff } .orderbtn:hover{ color: white; } /\* navbar section ======================================================== styling starts \*/ .navbar{ box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.7); z-index: 10; } .navbar .navbar-brand i{ color: var(--red); margin-right: 5px; font-size: 25px; } .navbar .navbar-brand span{ font-size: 25px; font-weight: bold; } .navbar .navbar-nav li a{ color: black; font-size: 18px; text-decoration: none; } .navbar .navbar-nav li{ padding: 5px; border-radius: 25px; margin-right: 15px; border: 1px solid white; transition: all 0.8s ease; } .navbar .navbar-nav li:hover{ background-color: black; } .navbar .navbar-nav li:hover a{ color: white; } .navbar button i{ font-size: 25px; } /\* navbar section ============================================================= styling ends \*/ /\* home section ================================================================ styling starts \*/ .home{ box-sizing: border-box; width: 100%; height: auto; background: url(/images/home-bg.jpg); background-repeat: no-repeat; background-position: center; box-sizing: border-box; background-size: cover; padding: 100px 10px; } .img-column{ padding: 80px; } .home-img{ animation: float 8s linear infinite; } @keyframes float{ 0%,100%{ transform: translateY(0px); } 50%{ transform: translateY(-150px); } } /\* home section ================================================================ styling ends \*/ /\* special scetion ================================================================= styling starts \*/ .box{ box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); padding: 25px; display: inline-block; cursor: pointer; border-radius: 15px; position: relative; overflow: hidden; z-index: 0; } .box-1::before, .box-2::before, .box-3::before, .box-4::before, .box-5::before, .box-6::before{ content: ""; position: absolute; top: 0; right: 0; width: 0%; height: 100%; transition: 0.8s linear; z-index: -1; } .box-1::before{ background: url(/images/s-img-1.jpg) no-repeat; background-size: cover; background-position: center; } .box-2::before{ background: url(/images/s-img-2.jpg) no-repeat; background-size: cover; background-position: center; } .box-3::before{ background: url(/images/s-img-3.jpg) no-repeat; background-size: cover; background-position: center; } .box-4::before{ background: url(/images/s-img-4.jpg) no-repeat; background-size: cover; background-position: center; } .box-5::before{ background: url(/images/s-img-5.jpg) no-repeat; background-size: cover; background-position: center; } .box-6::before{ background: url(/images/s-img-6.jpg) no-repeat; background-size: cover; background-position: center; } .box-1:hover::before, .box-2:hover::before, .box-3:hover::before, .box-4:hover::before, .box-5:hover::before, .box-6:hover::before{ width: 100%; left: 0; z-index: 100000; } .box-1.active .hidden, .box-2.active .hidden, .box-3.active .hidden, .box-4.active .hidden, .box-5.active .hidden, .box-6.active .hidden{ width: 100%; height: 100%; background: white; } .arrow{ background: red; color: white; position: fixed; top: 650px; z-index: 100; right: 50px; } .arrow:hover{ background: white; color: red; border: 1px solid red; } /\* special scetion ================================================================= styling strts \*/ /\* popular section ============================================================================= styling starts \*/ .area{ box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); padding: 20px; z-index: -1; } .area h2{ margin-top: 8px; } .star i{ font-size: 22px; color: yellow; font-weight: bold; } .star{ margin-bottom: 8px; } .button{ position: absolute; top: 25px; left: 25px; color: white; font-weight: bold; background-color: #f50909; } /\* popular section ============================================================================= styling Ends \*/ /\* how it work section ===================================================================== styling starts \*/ .heading{ font-weight: bold; font-size: 23px; } .step-img{ border-radius: 50%; border: 10px solid white; box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); } /\* how it work section ===================================================================== styling starts \*/ /\* gallery section ==================================================================== styling starts \*/ .image-section{ position: relative; border: 10px solid white; box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); } .text-area{ padding: 50px 10px; background: white; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: all 0.9s ease; display: none; } .image-section:hover .text-area{ display: block; } .indiv{ width: 100%; height: 100%; background: white; } @media (max-width:450px){ .text-area{ padding: 5px; } } @media (max-width:406px){ .text-area p{ font-size: 16px; } .text-area h3{ font-size: 20px; } .text-area .orderbtn{ padding: 4px 10px; } } @media (max-width:385px){ .text-area p{ font-size: 15px; } .text-area h3{ font-size: 18px; } .text-area .orderbtn{ padding: 2.5px 10px; } } @media (max-width:367px){ .text-area p{ font-size: 13px; } .text-area h3{ font-size: 15px; } .text-area .orderbtn{ padding: 2px 10px; font-size: 15px; } } @media (max-width:345px){ .text-area p{ font-size: 12px; } .text-area h3{ font-size: 13.5px; } .text-area .orderbtn{ font-size: 11px; padding: 2px 10px; } } /\* gallery section ==================================================================== styling ends \*/ /\* Review section ======================================================================== styling starts \*/ .stars i{ color: var(--red); } .stars i:last-child{ color: rgb(207, 204, 204); } .bin{ margin-bottom: 100px; background: rgb(0, 0, 0); position: relative; border: 10px solid white; box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); } .text{ margin-top: 80px; } .rounded-circle{ position: absolute; top: -80px; left: 33%; border: 10px solid white; } @media (max-width:768px) { .rounded-circle{ top: -120px; } .bin{ margin-bottom: 120px; } } @media (max-width:566px) { .rounded-circle{ top: -100px; } .bin{ margin-bottom: 100px; } } @media (max-width:406px) { .rounded-circle{ top: -80px; } .bin{ margin-bottom: 100px; } } /\* Review section ======================================================================== styling starts \*/ /\* order section ========================================================================================== styling starts \*/ .border{ border-radius: 15px; box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); } /\* order section ========================================================================================== styling ends \*/ /\* footer section ====================================================== styling starts \*/ .footer a{ margin-right: 15px; } /\* footer section ====================================================== styling ends \*/
 
+Food
 
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty dishes</title>
-
-    <!-- bootstrap css  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- google fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- fontawesome cdn  -->
-    <script src="https://kit.fontawesome.com/f1c31f30b1.js" crossorigin="anonymous"></script>
-
-    <!-- custom css  -->
-    <link rel="icon" href="/images/favicon/favicon.png">
-
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'nunito';
-}
-:root{
-    --red: #ff3838;
-}
-.para{
-    font-size: 18px;
-}
-section{
-    padding: 80px 10px;
-}
-html{
-    scroll-behavior: smooth;
-}
-.orderbtn{
-    display: inline-block;
-    padding: 8px 20px;
-    border: 2px solid var(--red);
-    color: var(--red);
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-.orderbtn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background: var(--red);
-    transition: 0.3s linear;
-    z-index: -1;
-}
-.orderbtn:hover::before{
-    width: 100%;
-    left: 0;
-    color: #fff
-}
-.orderbtn:hover{
-    color: white;
-}
-
-
-/* navbar section ======================================================== styling starts */
-.navbar{
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.7);
-    z-index: 10;
-}
-.navbar .navbar-brand i{
-    color: var(--red);
-    margin-right: 5px;
-    font-size: 25px;
-}
-.navbar .navbar-brand span{
-    font-size: 25px;
-    font-weight: bold;
-}
-.navbar .navbar-nav li a{
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-}
-.navbar .navbar-nav li{
-    padding: 5px;
-    border-radius: 25px;
-    margin-right: 15px;
-    border: 1px solid white;
-    transition: all 0.8s ease;
-}
-.navbar .navbar-nav li:hover{
-    background-color: black;
-}
-.navbar .navbar-nav li:hover a{
-    color: white;
-}
-.navbar button i{
-    font-size: 25px;
-}
-/* navbar section ============================================================= styling ends */
-
-
-
-
-
-
-/* home section ================================================================ styling starts */
-.home{
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    background: url(/images/home-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    box-sizing: border-box;
-    background-size: cover;
-    padding: 100px 10px;
-}
-.img-column{
-    padding: 80px;
-}
-.home-img{
-    animation: float 8s linear infinite;
-}
-@keyframes float{
-    0%,100%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-150px);
-    }
-}
-/* home section ================================================================ styling ends */
-
-
-
-
-
-
-
-
-
-/* special scetion ================================================================= styling starts */
-.box{
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
-    padding: 25px;  
-    display: inline-block;
-    cursor: pointer; 
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-.box-1::before,
-.box-2::before,
-.box-3::before,
-.box-4::before,
-.box-5::before,
-.box-6::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    transition: 0.8s linear;
-    z-index: -1;
-}
-.box-1::before{
-    background: url(/images/s-img-1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.box-2::before{
-    background: url(/images/s-img-2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.box-3::before{
-    background: url(/images/s-img-3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.box-4::before{
-    background: url(/images/s-img-4.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.box-5::before{
-    background: url(/images/s-img-5.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.box-6::before{
-    background: url(/images/s-img-6.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.box-1:hover::before,
-.box-2:hover::before,
-.box-3:hover::before,
-.box-4:hover::before,
-.box-5:hover::before,
-.box-6:hover::before{
-    width: 100%;
-    left: 0;
-    z-index: 100000;
-}
-.box-1.active .hidden,
-.box-2.active .hidden,
-.box-3.active .hidden,
-.box-4.active .hidden,
-.box-5.active .hidden,
-.box-6.active .hidden{
-    width: 100%;
-    height: 100%;
-    background: white;
-}
-.arrow{
-    background: red;
-    color: white;
-    position: fixed;
-    top: 650px;
-    z-index: 100;
-    right: 50px;
-}
-.arrow:hover{
-    background: white;
-    color: red;
-    border: 1px solid red;
-}
-/* special scetion ================================================================= styling strts */
-
-
-
-
-
-
-
-/* popular section ============================================================================= styling starts */
-.area{
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    z-index: -1;
-}
-.area h2{
-    margin-top: 8px;
-}
-.star i{
-    font-size: 22px;
-    color: yellow;
-    font-weight: bold;
-}
-.star{
-    margin-bottom: 8px;
-}
-.button{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    color: white;
-    font-weight: bold;
-    background-color: #f50909;
-}
-/* popular section ============================================================================= styling Ends */
-
-
-
-
-
-
-/* how it work section ===================================================================== styling starts */
-.heading{
-    font-weight: bold;
-    font-size: 23px;
-}
-.step-img{
-    border-radius: 50%;
-    border: 10px solid white;
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
-}
-/* how it work section ===================================================================== styling starts */
-
-
-
-
-
-
-
-/* gallery section ==================================================================== styling starts */
-.image-section{
-    position: relative;
-    border: 10px solid white;
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
-}
-.text-area{
-    padding: 50px 10px;
-    background: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.9s ease;
-    display: none;
-}
-.image-section:hover .text-area{
-    display: block;
-}
-.indiv{
-    width: 100%;
-    height: 100%;
-    background: white;
-}
-@media (max-width:450px){
-    .text-area{
-        padding: 5px;
-    }
-}
-@media (max-width:406px){
-    .text-area p{
-        font-size: 16px;
-    }
-    .text-area h3{
-        font-size: 20px;
-    }
-    .text-area .orderbtn{
-        padding: 4px 10px;
-    }
-}
-@media (max-width:385px){
-    .text-area p{
-        font-size: 15px;
-    }
-    .text-area h3{
-        font-size: 18px;
-    }
-    .text-area .orderbtn{
-        padding: 2.5px 10px;
-    }
-}
-@media (max-width:367px){
-    .text-area p{
-        font-size: 13px;
-    }
-    .text-area h3{
-        font-size: 15px;
-    }
-    .text-area .orderbtn{
-        padding: 2px 10px;
-        font-size: 15px;
-    }
-}
-@media (max-width:345px){
-    .text-area p{
-        font-size: 12px;
-    }
-    .text-area h3{
-        font-size: 13.5px;
-    }
-    .text-area .orderbtn{
-        font-size: 11px;
-        padding: 2px 10px;
-    }
-}
-
-
-/* gallery section ==================================================================== styling ends */
-
-
-
-
-
-
-
-/* Review section ======================================================================== styling starts */
-.stars i{
-    color: var(--red);
-}
-.stars i:last-child{
-    color: rgb(207, 204, 204);
-}
-.bin{
-    margin-bottom: 100px;
-    background: rgb(0, 0, 0);
-    position: relative;
-    border: 10px solid white;
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
-}
-.text{
-    margin-top: 80px;
-}
-.rounded-circle{
-    position: absolute;
-    top: -80px;
-    left: 33%;
-    border: 10px solid white;
-}
-@media (max-width:768px) {
-    .rounded-circle{
-        top: -120px;
-    }
-    .bin{
-        margin-bottom: 120px;
-    }
-}
-@media (max-width:566px) {
-    .rounded-circle{
-        top: -100px;
-    }
-    .bin{
-        margin-bottom: 100px;
-    }
-}
-@media (max-width:406px) {
-    .rounded-circle{
-        top: -80px;
-    }
-    .bin{
-        margin-bottom: 100px;
-    }
-}
-/* Review section ======================================================================== styling starts */
-
-
-
-
-
-
-/* order section ========================================================================================== styling starts */
-.border{
-    border-radius: 15px;
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
-}
-/* order section ========================================================================================== styling ends */
-
-
-
-
-/* footer section ====================================================== styling starts */
-.footer a{
-    margin-right: 15px;
-}
-/* footer section ====================================================== styling ends */
-    </style>
-
-</head>
-
-<body>
-
-
-
-
-
-    <!-- navbar ================================================================================ section -->
-    <div class="navbar navbar-expand-lg bg-white lr-p sticky-top">
-        <div class="container-fluid">
-            <div class="navbar-brand"><i class="fa fa-utensils"></i><span>Food</span></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span><i
-                        class="fa fa-bars"></i></span></button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ml-auto text-center font-weight-bold">
-                    <li class="navbar-item"><a href="#home">Home</a></li>
-                    <li class="navbar-item"><a href="#special">Speacial</a></li>
-                    <li class="navbar-item"><a href="#popular">Popular</a></li>
-                    <li class="navbar-item"><a href="#gallery">Gallery</a></li>
-                    <li class="navbar-item"><a href="#review">Review</a></li>
-                    <li class="navbar-item"><a href="#order">order</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- navbar ================================================================================ section -->
-
-
-
-
-
-
-
-
-
-
-
-    <!-- home ================================================================================ section -->
-    <header class="home" id="home">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-center align-items-center" style="height: 100vh;">
-                <div class="col-md-6 p-5">
-                    <h1 style="font-size: 40px; font-weight: bold; color:var(--red)"><span class="animate"></span></h1>
-                    <p class="text-justify para">Lorem, ipsum dolor sit amet consectetur adipisicin, eve perspiciatis
-                        alias? Eaque quis iste cupiditate usamus animi sequi ullam sint esse aspernatur eum, aut, minus
-                        ratio of ea quam. Quisquam voluptate nihil minus expedita distinctio rerum omnis fugit well.</p>
-                    <a href="#order" class=" btn orderbtn">Order Now</a>
-                </div>
-                <div class="col-md-6 img-column">
-                    <img class="home-img" src="/images/home-img.png" alt="home image" style="width: 100%;">
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- home ================================================================================ section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- special ================================================================================== section -->
-    <section id="special">
-        <div style="position: relative;" class="container-fluid">
-            <h1 class="text-center" style="font-weight: bold;">Our <span style="color: var(--red);">Special </span>
-                Dishes</h1>
-            <div class="row d-flex mt-5">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div onmouseover="add('.box-1')"
-                        class="box box-1 text-center active d-flex justify-content-center align-items-center">
-                        <div class="hidden">
-                            <img class="none" src="/images/s-1.png" alt="">
-                            <h3 class="none">Tasty Burger</h3>
-                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
-                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
-                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div onmouseover="add('.box-2')"
-                        class="box box-2 text-center active d-flex justify-content-center align-items-center ">
-                        <div class="hidden">
-                            <img class="none" src="/images/s-1.png" alt="">
-                            <h3 class="none">Tasty Pizza</h3>
-                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
-                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
-                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div onmouseover="add('.box-3')"
-                        class="box box-3 text-center active d-flex justify-content-center align-items-center ">
-                        <div class="hidden">
-                            <img class="none" src="/images/s-1.png" alt="">
-                            <h3 class="none">Cold Ice Cream</h3>
-                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
-                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
-                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div onmouseover="add('.box-4')"
-                        class="box box-4 text-center active d-flex justify-content-center align-items-center ">
-                        <div class="hidden">
-                            <img class="none" src="/images/s-1.png" alt="">
-                            <h3 class="none">Tasty Juices</h3>
-                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
-                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
-                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div onmouseover="add('.box-5')"
-                        class="box box-5 text-center active d-flex justify-content-center align-items-center ">
-                        <div class="hidden">
-                            <img class="none" src="/images/s-1.png" alt="">
-                            <h3 class="none">Tasty Cakes</h3>
-                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
-                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
-                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div onmouseover="add('.box-6')"
-                        class="box box-6 text-center active d-flex justify-content-center align-items-center ">
-                        <div class="hidden">
-                            <img class="none" src="/images/s-1.png" alt="">
-                            <h3 class="none">Hot Coffee</h3>
-                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
-                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
-                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="#home" class="btn arrow"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-    </section>
-    <!-- special ================================================================================== section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- popular ================================================================================== section -->
-    <section id="popular">
-        <div class="container">
-            <h1 class="text-center" style="font-weight: bold;">Most <span style="color: var(--red);">Popular
-                </span>Foods</h1>
-            <div class="row mt-5">
-                <div class="col-md-6 col-lg-4">
-                    <div class="area text-center mb-4">
-                        <a href="" class="btn button">&#8377 399</a>
-                        <img src="/images/p-1.jpg" alt="img" style="width: 100%; height: auto;">
-                        <h2>Tasty Burger</h2>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#order" class=" btn orderbtn">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="area text-center mb-4">
-                        <a href="" class="btn button">&#8377 750</a>
-                        <img src="/images/p-2.jpg" alt="img" style="width: 100%; height: auto;">
-                        <h2>Tasty Cake</h2>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#order" class="btn orderbtn">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="area text-center mb-4">
-                        <a href="" class="btn button">&#8377 350</a>
-                        <img src="/images/p-3.jpg" alt="img" style="width: 100%; height: auto;">
-                        <h2>Tasty Sweets</h2>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <a href="#order" class=" btn orderbtn">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="area text-center mb-4">
-                        <a href="" class="btn button">&#8377 150</a>
-                        <img src="/images/p-4.jpg" alt="img" style="width: 100%; height: auto;">
-                        <h2>Tasty Cupcake</h2>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#order" class=" btn orderbtn">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="area text-center mb-4">
-                        <a href="" class="btn button">&#8377 150</a>
-                        <img src="/images/p-5.jpg" alt="img" style="width: 100%; height: auto;">
-                        <h2>Cold Drinks</h2>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#order" class=" btn orderbtn">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="area text-center mb-4">
-                        <a href="" class="btn button">&#8377 99</a>
-                        <img src="/images/p-6.jpg" alt="img" style="width: 100%; height: auto;">
-                        <h2>Cold Ice-Cream</h2>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <a href="#order" class=" btn orderbtn">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- popular ================================================================================== section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- step =================================================================================================== section -->
-    <section id="step">
-        <div class="container">
-            <h1 class="text-center" style="font-weight: bold;">How It <span
-                    style="color: var(--red); font-weight: bold;">Works</span></h1>
-            <div class="row mt-5">
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-                    <img class="step-img img-fluid" src="/images/step-1.jpg" alt="">
-                    <div class="mt-3">
-                        <h5 class="text-center heading">Choose Your</h5>
-                        <h5 class="text-center heading">Favourite Food</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-                    <img class="step-img img-fluid" src="/images/step-2.jpg" alt="">
-                    <div class="mt-3">
-                        <h5 class="text-center heading">Free and Fast</h5>
-                        <h5 class="text-center heading">Delivery</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-                    <img class="step-img img-fluid" src="/images/step-3.jpg" alt="">
-                    <div class="mt-3">
-                        <h5 class="text-center heading">Easy Payment</h5>
-                        <h5 class="text-center heading">Methods</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-                    <img class="step-img img-fluid" src="/images/step-4.jpg" alt="">
-                    <div class="mt-3">
-                        <h5 class="text-center heading">And, Enjoy Your</h5>
-                        <h5 class="text-center heading">Foood</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- step =================================================================================================== section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- gallery ===================================================================================== section -->
-    <section id="gallery">
-        <div class="container-fluid p-5">
-            <h1 class="text-center" style="font-weight: bold;">Our Food <span style="color: var(--red);">Gallery</span>
-            </h1>
-            <div class="row mt-5">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-1.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-2.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-3.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-4.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-5.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-6.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-7.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-8.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="image-section">
-                        <img src="/images/g-9.jpg" alt="" style="width: 100%; height: auto;">
-                        <div class="text-area text-center">
-                            <h3 style="font-weight: bold;">Tasty Food</h3>
-                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
-                                architecto.</p>
-                            <a href="#order" class="btn orderbtn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- gallery ===================================================================================== section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!-- review =================================================================================== section  -->
-    <section id="review">
-        <div class="container">
-            <h1 class="text-center " style="font-weight: bold;">Our Customers <span style="color: var(--red);">Review</span></h1>
-            <div class="row" style="margin-top: 100px;">
-                <div class="col-md-6 col-lg-4 text-white">
-                    <div class="bin">
-                        <img style="width: 40%;" class="rounded-circle" src="/images/pic1.png" alt="">
-                        <div class="text d-flex justify-content-center align-items-center flex-column">
-                            <h3>Gorgino Bale</h3>
-                            <div class="stars mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="text-justify p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem,
-                                inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-white">
-                    <div class="bin">
-                        <img style="width: 40%;" class="rounded-circle" src="/images/pic2.png" alt="">
-                        <div class="text d-flex justify-content-center align-items-center flex-column">
-                            <h3>Danilo Parera</h3>
-                            <div class="stars mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="text-justify p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem,
-                                inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-white">
-                    <div class="bin">
-                        <img style="width: 40%;" class="rounded-circle" src="/images/pic3.png" alt="">
-                        <div class="text d-flex justify-content-center align-items-center flex-column">
-                            <h3>Luca Modric</h3>
-                            <div class="stars mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="text-justify p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem,
-                                inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <review =================================================================================== section  -->
-        
-
-
-
-
-
-
-
-    
-
-    <!-- order ======================================================================================================= section -->
-    <section id="order">
-        <div class="container-fluid">
-            <h1 class="text-center" style="font-weight: bold;"><span style="color: var(--red);">Order </span>Now</h1>
-            <div class="row mt-4">
-                <div class="col-lg-6 mb-3">
-                    <img class="border" src="/images/order-img.jpg" alt="" style="width: 100%; height: auto;">
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <form class="p-" style="width: 100%;">
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control is-valid" id="validationServer01"
-                                    placeholder="name" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control is-valid" id="validationServer02"
-                                    placeholder="email" value="" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <input type="tel" class="form-control is-invalid" id="validationServer03"
-                                    placeholder="number" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid number.
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control is-invalid" id="validationServer04"
-                                    placeholder="food name" required>
-                            </div>
-                        </div>
-                        <div class="form-row ">
-                            <div class="col-12 mb-3">
-                                <input type="text" class="form-control is-invalid" id="validationServer04"
-                                    placeholder="Address...." required style="height: 150px;">
-                            </div>
-                        </div>
-                        <button class="btn orderbtn" type="submit">Order Now</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- order ======================================================================================================= section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- foooter ================================================================================== section -->
-    <section class="footer bg-dark" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-lg-2 mb-3">
-                    <a href="" class="btn orderbtn">Facebook</a>
-                </div>
-                <div class="col-4 col-lg-2 mb-3">
-                    <a href="" class="btn orderbtn">Linkedin</a>
-                </div>
-                <div class="col-4 col-lg-2 mb-3">
-                    <a href="" class="btn orderbtn">Github</a>
-                </div>
-                <div class="col-4 col-lg-2 mb-3">
-                    <a href="" class="btn orderbtn insta">Instagram</a>
-                </div>
-                <div class="col-4 col-lg-2 mb-3">
-                    <a href="" class="btn orderbtn behance">Behance</a>
-                </div>
-                <div class="col-4 col-lg-2 mb-3">
-                    <a href="" class="btn orderbtn">Twitter</a>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center">
-                <h3 class="mt-3" style="font-size: 20px; font-weight: bold; color: white;">Created by <span style="color: var(--red);">Adil Shabab</span> || All Right Reserved</h3>
-            </div>
-        </div>
-    </section>
-    <!-- foooter ================================================================================== section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- type animation js  -->
-    <script >
-        /*!
- * 
- *   typed.js - A JavaScript Typing Animation Library
- *   Author: Matt Boldt <me@mattboldt.com>
- *   Version: v2.0.12
- *   Url: https://github.com/mattboldt/typed.js
- *   License(s): MIT
- * 
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["Typed"] = factory();
-	else
-		root["Typed"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	var _initializerJs = __webpack_require__(1);
-	
-	var _htmlParserJs = __webpack_require__(3);
-	
-	/**
-	 * Welcome to Typed.js!
-	 * @param {string} elementId HTML element ID _OR_ HTML element
-	 * @param {object} options options object
-	 * @returns {object} a new Typed object
-	 */
-	
-	var Typed = (function () {
-	  function Typed(elementId, options) {
-	    _classCallCheck(this, Typed);
-	
-	    // Initialize it up
-	    _initializerJs.initializer.load(this, options, elementId);
-	    // All systems go!
-	    this.begin();
-	  }
-	
-	  /**
-	   * Toggle start() and stop() of the Typed instance
-	   * @public
-	   */
-	
-	  _createClass(Typed, [{
-	    key: 'toggle',
-	    value: function toggle() {
-	      this.pause.status ? this.start() : this.stop();
-	    }
-	
-	    /**
-	     * Stop typing / backspacing and enable cursor blinking
-	     * @public
-	     */
-	  }, {
-	    key: 'stop',
-	    value: function stop() {
-	      if (this.typingComplete) return;
-	      if (this.pause.status) return;
-	      this.toggleBlinking(true);
-	      this.pause.status = true;
-	      this.options.onStop(this.arrayPos, this);
-	    }
-	
-	    /**
-	     * Start typing / backspacing after being stopped
-	     * @public
-	     */
-	  }, {
-	    key: 'start',
-	    value: function start() {
-	      if (this.typingComplete) return;
-	      if (!this.pause.status) return;
-	      this.pause.status = false;
-	      if (this.pause.typewrite) {
-	        this.typewrite(this.pause.curString, this.pause.curStrPos);
-	      } else {
-	        this.backspace(this.pause.curString, this.pause.curStrPos);
-	      }
-	      this.options.onStart(this.arrayPos, this);
-	    }
-	
-	    /**
-	     * Destroy this instance of Typed
-	     * @public
-	     */
-	  }, {
-	    key: 'destroy',
-	    value: function destroy() {
-	      this.reset(false);
-	      this.options.onDestroy(this);
-	    }
-	
-	    /**
-	     * Reset Typed and optionally restarts
-	     * @param {boolean} restart
-	     * @public
-	     */
-	  }, {
-	    key: 'reset',
-	    value: function reset() {
-	      var restart = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
-	
-	      clearInterval(this.timeout);
-	      this.replaceText('');
-	      if (this.cursor && this.cursor.parentNode) {
-	        this.cursor.parentNode.removeChild(this.cursor);
-	        this.cursor = null;
-	      }
-	      this.strPos = 0;
-	      this.arrayPos = 0;
-	      this.curLoop = 0;
-	      if (restart) {
-	        this.insertCursor();
-	        this.options.onReset(this);
-	        this.begin();
-	      }
-	    }
-	
-	    /**
-	     * Begins the typing animation
-	     * @private
-	     */
-	  }, {
-	    key: 'begin',
-	    value: function begin() {
-	      var _this = this;
-	
-	      this.options.onBegin(this);
-	      this.typingComplete = false;
-	      this.shuffleStringsIfNeeded(this);
-	      this.insertCursor();
-	      if (this.bindInputFocusEvents) this.bindFocusEvents();
-	      this.timeout = setTimeout(function () {
-	        // Check if there is some text in the element, if yes start by backspacing the default message
-	        if (!_this.currentElContent || _this.currentElContent.length === 0) {
-	          _this.typewrite(_this.strings[_this.sequence[_this.arrayPos]], _this.strPos);
-	        } else {
-	          // Start typing
-	          _this.backspace(_this.currentElContent, _this.currentElContent.length);
-	        }
-	      }, this.startDelay);
-	    }
-	
-	    /**
-	     * Called for each character typed
-	     * @param {string} curString the current string in the strings array
-	     * @param {number} curStrPos the current position in the curString
-	     * @private
-	     */
-	  }, {
-	    key: 'typewrite',
-	    value: function typewrite(curString, curStrPos) {
-	      var _this2 = this;
-	
-	      if (this.fadeOut && this.el.classList.contains(this.fadeOutClass)) {
-	        this.el.classList.remove(this.fadeOutClass);
-	        if (this.cursor) this.cursor.classList.remove(this.fadeOutClass);
-	      }
-	
-	      var humanize = this.humanizer(this.typeSpeed);
-	      var numChars = 1;
-	
-	      if (this.pause.status === true) {
-	        this.setPauseStatus(curString, curStrPos, true);
-	        return;
-	      }
-	
-	      // contain typing function in a timeout humanize'd delay
-	      this.timeout = setTimeout(function () {
-	        // skip over any HTML chars
-	        curStrPos = _htmlParserJs.htmlParser.typeHtmlChars(curString, curStrPos, _this2);
-	
-	        var pauseTime = 0;
-	        var substr = curString.substr(curStrPos);
-	        // check for an escape character before a pause value
-	        // format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
-	        // single ^ are removed from string
-	        if (substr.charAt(0) === '^') {
-	          if (/^\^\d+/.test(substr)) {
-	            var skip = 1; // skip at least 1
-	            substr = /\d+/.exec(substr)[0];
-	            skip += substr.length;
-	            pauseTime = parseInt(substr);
-	            _this2.temporaryPause = true;
-	            _this2.options.onTypingPaused(_this2.arrayPos, _this2);
-	            // strip out the escape character and pause value so they're not printed
-	            curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip);
-	            _this2.toggleBlinking(true);
-	          }
-	        }
-	
-	        // check for skip characters formatted as
-	        // "this is a `string to print NOW` ..."
-	        if (substr.charAt(0) === '`') {
-	          while (curString.substr(curStrPos + numChars).charAt(0) !== '`') {
-	            numChars++;
-	            if (curStrPos + numChars > curString.length) break;
-	          }
-	          // strip out the escape characters and append all the string in between
-	          var stringBeforeSkip = curString.substring(0, curStrPos);
-	          var stringSkipped = curString.substring(stringBeforeSkip.length + 1, curStrPos + numChars);
-	          var stringAfterSkip = curString.substring(curStrPos + numChars + 1);
-	          curString = stringBeforeSkip + stringSkipped + stringAfterSkip;
-	          numChars--;
-	        }
-	
-	        // timeout for any pause after a character
-	        _this2.timeout = setTimeout(function () {
-	          // Accounts for blinking while paused
-	          _this2.toggleBlinking(false);
-	
-	          // We're done with this sentence!
-	          if (curStrPos >= curString.length) {
-	            _this2.doneTyping(curString, curStrPos);
-	          } else {
-	            _this2.keepTyping(curString, curStrPos, numChars);
-	          }
-	          // end of character pause
-	          if (_this2.temporaryPause) {
-	            _this2.temporaryPause = false;
-	            _this2.options.onTypingResumed(_this2.arrayPos, _this2);
-	          }
-	        }, pauseTime);
-	
-	        // humanized value for typing
-	      }, humanize);
-	    }
-	
-	    /**
-	     * Continue to the next string & begin typing
-	     * @param {string} curString the current string in the strings array
-	     * @param {number} curStrPos the current position in the curString
-	     * @private
-	     */
-	  }, {
-	    key: 'keepTyping',
-	    value: function keepTyping(curString, curStrPos, numChars) {
-	      // call before functions if applicable
-	      if (curStrPos === 0) {
-	        this.toggleBlinking(false);
-	        this.options.preStringTyped(this.arrayPos, this);
-	      }
-	      // start typing each new char into existing string
-	      // curString: arg, this.el.html: original text inside element
-	      curStrPos += numChars;
-	      var nextString = curString.substr(0, curStrPos);
-	      this.replaceText(nextString);
-	      // loop the function
-	      this.typewrite(curString, curStrPos);
-	    }
-	
-	    /**
-	     * We're done typing the current string
-	     * @param {string} curString the current string in the strings array
-	     * @param {number} curStrPos the current position in the curString
-	     * @private
-	     */
-	  }, {
-	    key: 'doneTyping',
-	    value: function doneTyping(curString, curStrPos) {
-	      var _this3 = this;
-	
-	      // fires callback function
-	      this.options.onStringTyped(this.arrayPos, this);
-	      this.toggleBlinking(true);
-	      // is this the final string
-	      if (this.arrayPos === this.strings.length - 1) {
-	        // callback that occurs on the last typed string
-	        this.complete();
-	        // quit if we wont loop back
-	        if (this.loop === false || this.curLoop === this.loopCount) {
-	          return;
-	        }
-	      }
-	      this.timeout = setTimeout(function () {
-	        _this3.backspace(curString, curStrPos);
-	      }, this.backDelay);
-	    }
-	
-	    /**
-	     * Backspaces 1 character at a time
-	     * @param {string} curString the current string in the strings array
-	     * @param {number} curStrPos the current position in the curString
-	     * @private
-	     */
-	  }, {
-	    key: 'backspace',
-	    value: function backspace(curString, curStrPos) {
-	      var _this4 = this;
-	
-	      if (this.pause.status === true) {
-	        this.setPauseStatus(curString, curStrPos, false);
-	        return;
-	      }
-	      if (this.fadeOut) return this.initFadeOut();
-	
-	      this.toggleBlinking(false);
-	      var humanize = this.humanizer(this.backSpeed);
-	
-	      this.timeout = setTimeout(function () {
-	        curStrPos = _htmlParserJs.htmlParser.backSpaceHtmlChars(curString, curStrPos, _this4);
-	        // replace text with base text + typed characters
-	        var curStringAtPosition = curString.substr(0, curStrPos);
-	        _this4.replaceText(curStringAtPosition);
-	
-	        // if smartBack is enabled
-	        if (_this4.smartBackspace) {
-	          // the remaining part of the current string is equal of the same part of the new string
-	          var nextString = _this4.strings[_this4.arrayPos + 1];
-	          if (nextString && curStringAtPosition === nextString.substr(0, curStrPos)) {
-	            _this4.stopNum = curStrPos;
-	          } else {
-	            _this4.stopNum = 0;
-	          }
-	        }
-	
-	        // if the number (id of character in current string) is
-	        // less than the stop number, keep going
-	        if (curStrPos > _this4.stopNum) {
-	          // subtract characters one by one
-	          curStrPos--;
-	          // loop the function
-	          _this4.backspace(curString, curStrPos);
-	        } else if (curStrPos <= _this4.stopNum) {
-	          // if the stop number has been reached, increase
-	          // array position to next string
-	          _this4.arrayPos++;
-	          // When looping, begin at the beginning after backspace complete
-	          if (_this4.arrayPos === _this4.strings.length) {
-	            _this4.arrayPos = 0;
-	            _this4.options.onLastStringBackspaced();
-	            _this4.shuffleStringsIfNeeded();
-	            _this4.begin();
-	          } else {
-	            _this4.typewrite(_this4.strings[_this4.sequence[_this4.arrayPos]], curStrPos);
-	          }
-	        }
-	        // humanized value for typing
-	      }, humanize);
-	    }
-	
-	    /**
-	     * Full animation is complete
-	     * @private
-	     */
-	  }, {
-	    key: 'complete',
-	    value: function complete() {
-	      this.options.onComplete(this);
-	      if (this.loop) {
-	        this.curLoop++;
-	      } else {
-	        this.typingComplete = true;
-	      }
-	    }
-	
-	    /**
-	     * Has the typing been stopped
-	     * @param {string} curString the current string in the strings array
-	     * @param {number} curStrPos the current position in the curString
-	     * @param {boolean} isTyping
-	     * @private
-	     */
-	  }, {
-	    key: 'setPauseStatus',
-	    value: function setPauseStatus(curString, curStrPos, isTyping) {
-	      this.pause.typewrite = isTyping;
-	      this.pause.curString = curString;
-	      this.pause.curStrPos = curStrPos;
-	    }
-	
-	    /**
-	     * Toggle the blinking cursor
-	     * @param {boolean} isBlinking
-	     * @private
-	     */
-	  }, {
-	    key: 'toggleBlinking',
-	    value: function toggleBlinking(isBlinking) {
-	      if (!this.cursor) return;
-	      // if in paused state, don't toggle blinking a 2nd time
-	      if (this.pause.status) return;
-	      if (this.cursorBlinking === isBlinking) return;
-	      this.cursorBlinking = isBlinking;
-	      if (isBlinking) {
-	        this.cursor.classList.add('typed-cursor--blink');
-	      } else {
-	        this.cursor.classList.remove('typed-cursor--blink');
-	      }
-	    }
-	
-	    /**
-	     * Speed in MS to type
-	     * @param {number} speed
-	     * @private
-	     */
-	  }, {
-	    key: 'humanizer',
-	    value: function humanizer(speed) {
-	      return Math.round(Math.random() * speed / 2) + speed;
-	    }
-	
-	    /**
-	     * Shuffle the sequence of the strings array
-	     * @private
-	     */
-	  }, {
-	    key: 'shuffleStringsIfNeeded',
-	    value: function shuffleStringsIfNeeded() {
-	      if (!this.shuffle) return;
-	      this.sequence = this.sequence.sort(function () {
-	        return Math.random() - 0.5;
-	      });
-	    }
-	
-	    /**
-	     * Adds a CSS class to fade out current string
-	     * @private
-	     */
-	  }, {
-	    key: 'initFadeOut',
-	    value: function initFadeOut() {
-	      var _this5 = this;
-	
-	      this.el.className += ' ' + this.fadeOutClass;
-	      if (this.cursor) this.cursor.className += ' ' + this.fadeOutClass;
-	      return setTimeout(function () {
-	        _this5.arrayPos++;
-	        _this5.replaceText('');
-	
-	        // Resets current string if end of loop reached
-	        if (_this5.strings.length > _this5.arrayPos) {
-	          _this5.typewrite(_this5.strings[_this5.sequence[_this5.arrayPos]], 0);
-	        } else {
-	          _this5.typewrite(_this5.strings[0], 0);
-	          _this5.arrayPos = 0;
-	        }
-	      }, this.fadeOutDelay);
-	    }
-	
-	    /**
-	     * Replaces current text in the HTML element
-	     * depending on element type
-	     * @param {string} str
-	     * @private
-	     */
-	  }, {
-	    key: 'replaceText',
-	    value: function replaceText(str) {
-	      if (this.attr) {
-	        this.el.setAttribute(this.attr, str);
-	      } else {
-	        if (this.isInput) {
-	          this.el.value = str;
-	        } else if (this.contentType === 'html') {
-	          this.el.innerHTML = str;
-	        } else {
-	          this.el.textContent = str;
-	        }
-	      }
-	    }
-	
-	    /**
-	     * If using input elements, bind focus in order to
-	     * start and stop the animation
-	     * @private
-	     */
-	  }, {
-	    key: 'bindFocusEvents',
-	    value: function bindFocusEvents() {
-	      var _this6 = this;
-	
-	      if (!this.isInput) return;
-	      this.el.addEventListener('focus', function (e) {
-	        _this6.stop();
-	      });
-	      this.el.addEventListener('blur', function (e) {
-	        if (_this6.el.value && _this6.el.value.length !== 0) {
-	          return;
-	        }
-	        _this6.start();
-	      });
-	    }
-	
-	    /**
-	     * On init, insert the cursor element
-	     * @private
-	     */
-	  }, {
-	    key: 'insertCursor',
-	    value: function insertCursor() {
-	      if (!this.showCursor) return;
-	      if (this.cursor) return;
-	      this.cursor = document.createElement('span');
-	      this.cursor.className = 'typed-cursor';
-	      this.cursor.setAttribute('aria-hidden', true);
-	      this.cursor.innerHTML = this.cursorChar;
-	      this.el.parentNode && this.el.parentNode.insertBefore(this.cursor, this.el.nextSibling);
-	    }
-	  }]);
-	
-	  return Typed;
-	})();
-	
-	exports['default'] = Typed;
-	module.exports = exports['default'];
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	var _defaultsJs = __webpack_require__(2);
-	
-	var _defaultsJs2 = _interopRequireDefault(_defaultsJs);
-	
-	/**
-	 * Initialize the Typed object
-	 */
-	
-	var Initializer = (function () {
-	  function Initializer() {
-	    _classCallCheck(this, Initializer);
-	  }
-	
-	  _createClass(Initializer, [{
-	    key: 'load',
-	
-	    /**
-	     * Load up defaults & options on the Typed instance
-	     * @param {Typed} self instance of Typed
-	     * @param {object} options options object
-	     * @param {string} elementId HTML element ID _OR_ instance of HTML element
-	     * @private
-	     */
-	
-	    value: function load(self, options, elementId) {
-	      // chosen element to manipulate text
-	      if (typeof elementId === 'string') {
-	        self.el = document.querySelector(elementId);
-	      } else {
-	        self.el = elementId;
-	      }
-	
-	      self.options = _extends({}, _defaultsJs2['default'], options);
-	
-	      // attribute to type into
-	      self.isInput = self.el.tagName.toLowerCase() === 'input';
-	      self.attr = self.options.attr;
-	      self.bindInputFocusEvents = self.options.bindInputFocusEvents;
-	
-	      // show cursor
-	      self.showCursor = self.isInput ? false : self.options.showCursor;
-	
-	      // custom cursor
-	      self.cursorChar = self.options.cursorChar;
-	
-	      // Is the cursor blinking
-	      self.cursorBlinking = true;
-	
-	      // text content of element
-	      self.elContent = self.attr ? self.el.getAttribute(self.attr) : self.el.textContent;
-	
-	      // html or plain text
-	      self.contentType = self.options.contentType;
-	
-	      // typing speed
-	      self.typeSpeed = self.options.typeSpeed;
-	
-	      // add a delay before typing starts
-	      self.startDelay = self.options.startDelay;
-	
-	      // backspacing speed
-	      self.backSpeed = self.options.backSpeed;
-	
-	      // only backspace what doesn't match the previous string
-	      self.smartBackspace = self.options.smartBackspace;
-	
-	      // amount of time to wait before backspacing
-	      self.backDelay = self.options.backDelay;
-	
-	      // Fade out instead of backspace
-	      self.fadeOut = self.options.fadeOut;
-	      self.fadeOutClass = self.options.fadeOutClass;
-	      self.fadeOutDelay = self.options.fadeOutDelay;
-	
-	      // variable to check whether typing is currently paused
-	      self.isPaused = false;
-	
-	      // input strings of text
-	      self.strings = self.options.strings.map(function (s) {
-	        return s.trim();
-	      });
-	
-	      // div containing strings
-	      if (typeof self.options.stringsElement === 'string') {
-	        self.stringsElement = document.querySelector(self.options.stringsElement);
-	      } else {
-	        self.stringsElement = self.options.stringsElement;
-	      }
-	
-	      if (self.stringsElement) {
-	        self.strings = [];
-	        self.stringsElement.style.display = 'none';
-	        var strings = Array.prototype.slice.apply(self.stringsElement.children);
-	        var stringsLength = strings.length;
-	
-	        if (stringsLength) {
-	          for (var i = 0; i < stringsLength; i += 1) {
-	            var stringEl = strings[i];
-	            self.strings.push(stringEl.innerHTML.trim());
-	          }
-	        }
-	      }
-	
-	      // character number position of current string
-	      self.strPos = 0;
-	
-	      // current array position
-	      self.arrayPos = 0;
-	
-	      // index of string to stop backspacing on
-	      self.stopNum = 0;
-	
-	      // Looping logic
-	      self.loop = self.options.loop;
-	      self.loopCount = self.options.loopCount;
-	      self.curLoop = 0;
-	
-	      // shuffle the strings
-	      self.shuffle = self.options.shuffle;
-	      // the order of strings
-	      self.sequence = [];
-	
-	      self.pause = {
-	        status: false,
-	        typewrite: true,
-	        curString: '',
-	        curStrPos: 0
-	      };
-	
-	      // When the typing is complete (when not looped)
-	      self.typingComplete = false;
-	
-	      // Set the order in which the strings are typed
-	      for (var i in self.strings) {
-	        self.sequence[i] = i;
-	      }
-	
-	      // If there is some text in the element
-	      self.currentElContent = this.getCurrentElContent(self);
-	
-	      self.autoInsertCss = self.options.autoInsertCss;
-	
-	      this.appendAnimationCss(self);
-	    }
-	  }, {
-	    key: 'getCurrentElContent',
-	    value: function getCurrentElContent(self) {
-	      var elContent = '';
-	      if (self.attr) {
-	        elContent = self.el.getAttribute(self.attr);
-	      } else if (self.isInput) {
-	        elContent = self.el.value;
-	      } else if (self.contentType === 'html') {
-	        elContent = self.el.innerHTML;
-	      } else {
-	        elContent = self.el.textContent;
-	      }
-	      return elContent;
-	    }
-	  }, {
-	    key: 'appendAnimationCss',
-	    value: function appendAnimationCss(self) {
-	      var cssDataName = 'data-typed-js-css';
-	      if (!self.autoInsertCss) {
-	        return;
-	      }
-	      if (!self.showCursor && !self.fadeOut) {
-	        return;
-	      }
-	      if (document.querySelector('[' + cssDataName + ']')) {
-	        return;
-	      }
-	
-	      var css = document.createElement('style');
-	      css.type = 'text/css';
-	      css.setAttribute(cssDataName, true);
-	
-	      var innerCss = '';
-	      if (self.showCursor) {
-	        innerCss += '\n        .typed-cursor{\n          opacity: 1;\n        }\n        .typed-cursor.typed-cursor--blink{\n          animation: typedjsBlink 0.7s infinite;\n          -webkit-animation: typedjsBlink 0.7s infinite;\n                  animation: typedjsBlink 0.7s infinite;\n        }\n        @keyframes typedjsBlink{\n          50% { opacity: 0.0; }\n        }\n        @-webkit-keyframes typedjsBlink{\n          0% { opacity: 1; }\n          50% { opacity: 0.0; }\n          100% { opacity: 1; }\n        }\n      ';
-	      }
-	      if (self.fadeOut) {
-	        innerCss += '\n        .typed-fade-out{\n          opacity: 0;\n          transition: opacity .25s;\n        }\n        .typed-cursor.typed-cursor--blink.typed-fade-out{\n          -webkit-animation: 0;\n          animation: 0;\n        }\n      ';
-	      }
-	      if (css.length === 0) {
-	        return;
-	      }
-	      css.innerHTML = innerCss;
-	      document.body.appendChild(css);
-	    }
-	  }]);
-	
-	  return Initializer;
-	})();
-	
-	exports['default'] = Initializer;
-	var initializer = new Initializer();
-	exports.initializer = initializer;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-	/**
-	 * Defaults & options
-	 * @returns {object} Typed defaults & options
-	 * @public
-	 */
-	
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	var defaults = {
-	  /**
-	   * @property {array} strings strings to be typed
-	   * @property {string} stringsElement ID of element containing string children
-	   */
-	  strings: ['These are the default values...', 'You know what you should do?', 'Use your own!', 'Have a great day!'],
-	  stringsElement: null,
-	
-	  /**
-	   * @property {number} typeSpeed type speed in milliseconds
-	   */
-	  typeSpeed: 0,
-	
-	  /**
-	   * @property {number} startDelay time before typing starts in milliseconds
-	   */
-	  startDelay: 0,
-	
-	  /**
-	   * @property {number} backSpeed backspacing speed in milliseconds
-	   */
-	  backSpeed: 0,
-	
-	  /**
-	   * @property {boolean} smartBackspace only backspace what doesn't match the previous string
-	   */
-	  smartBackspace: true,
-	
-	  /**
-	   * @property {boolean} shuffle shuffle the strings
-	   */
-	  shuffle: false,
-	
-	  /**
-	   * @property {number} backDelay time before backspacing in milliseconds
-	   */
-	  backDelay: 700,
-	
-	  /**
-	   * @property {boolean} fadeOut Fade out instead of backspace
-	   * @property {string} fadeOutClass css class for fade animation
-	   * @property {boolean} fadeOutDelay Fade out delay in milliseconds
-	   */
-	  fadeOut: false,
-	  fadeOutClass: 'typed-fade-out',
-	  fadeOutDelay: 500,
-	
-	  /**
-	   * @property {boolean} loop loop strings
-	   * @property {number} loopCount amount of loops
-	   */
-	  loop: false,
-	  loopCount: Infinity,
-	
-	  /**
-	   * @property {boolean} showCursor show cursor
-	   * @property {string} cursorChar character for cursor
-	   * @property {boolean} autoInsertCss insert CSS for cursor and fadeOut into HTML <head>
-	   */
-	  showCursor: true,
-	  cursorChar: '|',
-	  autoInsertCss: true,
-	
-	  /**
-	   * @property {string} attr attribute for typing
-	   * Ex: input placeholder, value, or just HTML text
-	   */
-	  attr: null,
-	
-	  /**
-	   * @property {boolean} bindInputFocusEvents bind to focus and blur if el is text input
-	   */
-	  bindInputFocusEvents: false,
-	
-	  /**
-	   * @property {string} contentType 'html' or 'null' for plaintext
-	   */
-	  contentType: 'html',
-	
-	  /**
-	   * Before it begins typing
-	   * @param {Typed} self
-	   */
-	  onBegin: function onBegin(self) {},
-	
-	  /**
-	   * All typing is complete
-	   * @param {Typed} self
-	   */
-	  onComplete: function onComplete(self) {},
-	
-	  /**
-	   * Before each string is typed
-	   * @param {number} arrayPos
-	   * @param {Typed} self
-	   */
-	  preStringTyped: function preStringTyped(arrayPos, self) {},
-	
-	  /**
-	   * After each string is typed
-	   * @param {number} arrayPos
-	   * @param {Typed} self
-	   */
-	  onStringTyped: function onStringTyped(arrayPos, self) {},
-	
-	  /**
-	   * During looping, after last string is typed
-	   * @param {Typed} self
-	   */
-	  onLastStringBackspaced: function onLastStringBackspaced(self) {},
-	
-	  /**
-	   * Typing has been stopped
-	   * @param {number} arrayPos
-	   * @param {Typed} self
-	   */
-	  onTypingPaused: function onTypingPaused(arrayPos, self) {},
-	
-	  /**
-	   * Typing has been started after being stopped
-	   * @param {number} arrayPos
-	   * @param {Typed} self
-	   */
-	  onTypingResumed: function onTypingResumed(arrayPos, self) {},
-	
-	  /**
-	   * After reset
-	   * @param {Typed} self
-	   */
-	  onReset: function onReset(self) {},
-	
-	  /**
-	   * After stop
-	   * @param {number} arrayPos
-	   * @param {Typed} self
-	   */
-	  onStop: function onStop(arrayPos, self) {},
-	
-	  /**
-	   * After start
-	   * @param {number} arrayPos
-	   * @param {Typed} self
-	   */
-	  onStart: function onStart(arrayPos, self) {},
-	
-	  /**
-	   * After destroy
-	   * @param {Typed} self
-	   */
-	  onDestroy: function onDestroy(self) {}
-	};
-	
-	exports['default'] = defaults;
-	module.exports = exports['default'];
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-	/**
-	 * TODO: These methods can probably be combined somehow
-	 * Parse HTML tags & HTML Characters
-	 */
-	
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	var HTMLParser = (function () {
-	  function HTMLParser() {
-	    _classCallCheck(this, HTMLParser);
-	  }
-	
-	  _createClass(HTMLParser, [{
-	    key: 'typeHtmlChars',
-	
-	    /**
-	     * Type HTML tags & HTML Characters
-	     * @param {string} curString Current string
-	     * @param {number} curStrPos Position in current string
-	     * @param {Typed} self instance of Typed
-	     * @returns {number} a new string position
-	     * @private
-	     */
-	
-	    value: function typeHtmlChars(curString, curStrPos, self) {
-	      if (self.contentType !== 'html') return curStrPos;
-	      var curChar = curString.substr(curStrPos).charAt(0);
-	      if (curChar === '<' || curChar === '&') {
-	        var endTag = '';
-	        if (curChar === '<') {
-	          endTag = '>';
-	        } else {
-	          endTag = ';';
-	        }
-	        while (curString.substr(curStrPos + 1).charAt(0) !== endTag) {
-	          curStrPos++;
-	          if (curStrPos + 1 > curString.length) {
-	            break;
-	          }
-	        }
-	        curStrPos++;
-	      }
-	      return curStrPos;
-	    }
-	
-	    /**
-	     * Backspace HTML tags and HTML Characters
-	     * @param {string} curString Current string
-	     * @param {number} curStrPos Position in current string
-	     * @param {Typed} self instance of Typed
-	     * @returns {number} a new string position
-	     * @private
-	     */
-	  }, {
-	    key: 'backSpaceHtmlChars',
-	    value: function backSpaceHtmlChars(curString, curStrPos, self) {
-	      if (self.contentType !== 'html') return curStrPos;
-	      var curChar = curString.substr(curStrPos).charAt(0);
-	      if (curChar === '>' || curChar === ';') {
-	        var endTag = '';
-	        if (curChar === '>') {
-	          endTag = '<';
-	        } else {
-	          endTag = '&';
-	        }
-	        while (curString.substr(curStrPos - 1).charAt(0) !== endTag) {
-	          curStrPos--;
-	          if (curStrPos < 0) {
-	            break;
-	          }
-	        }
-	        curStrPos--;
-	      }
-	      return curStrPos;
-	    }
-	  }]);
-	
-	  return HTMLParser;
-	})();
-	
-	exports['default'] = HTMLParser;
-	var htmlParser = new HTMLParser();
-	exports.htmlParser = htmlParser;
-
-/***/ })
-/******/ ])
-});
-;
-    </script>
-
-    <!-- custome js  -->
-    <script>
-        var typed = new Typed('.animate', {
-    strings: [
-                "Your Favourite Dishes",
-                "In Your Door Step",
-                "Order Now From Our Shop",
-                "Enjoy Your Food"
-
-            ],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-});
-
-
-
-function add() {
-    document.querySelector('.box-1').classList.toggle('.active')
-}
-    </script>
-
-    <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-
-    <!-- popper.js  -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-
-    <!-- bootstrap js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-</body>
+*   [Home](#home)
+*   [Speacial](#special)
+*   [Popular](#popular)
+*   [Gallery](#gallery)
+*   [Review](#review)
+*   [order](#order)
+
+Lorem, ipsum dolor sit amet consectetur adipisicin, eve perspiciatis alias? Eaque quis iste cupiditate usamus animi sequi ullam sint esse aspernatur eum, aut, minus ratio of ea quam. Quisquam voluptate nihil minus expedita distinctio rerum omnis fugit well.
+
+[Order Now](#order)
+
+![home image](/images/home-img.png)
+
+Our Special Dishes
+==================
+
+![](/images/s-1.png)
+
+### Tasty Burger
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis officiis error ducimus accusamus placeat? Iure, in. Commodi.
+
+![](/images/s-1.png)
+
+### Tasty Pizza
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis officiis error ducimus accusamus placeat? Iure, in. Commodi.
+
+![](/images/s-1.png)
+
+### Cold Ice Cream
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis officiis error ducimus accusamus placeat? Iure, in. Commodi.
+
+![](/images/s-1.png)
+
+### Tasty Juices
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis officiis error ducimus accusamus placeat? Iure, in. Commodi.
+
+![](/images/s-1.png)
+
+### Tasty Cakes
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis officiis error ducimus accusamus placeat? Iure, in. Commodi.
+
+![](/images/s-1.png)
+
+### Hot Coffee
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis officiis error ducimus accusamus placeat? Iure, in. Commodi.
+
+[](#home)
+
+Most Popular Foods
+==================
+
+₹ 399 ![img](/images/p-1.jpg)
+
+Tasty Burger
+------------
+
+[Order Now](#order)
+
+₹ 750 ![img](/images/p-2.jpg)
+
+Tasty Cake
+----------
+
+[Order Now](#order)
+
+₹ 350 ![img](/images/p-3.jpg)
+
+Tasty Sweets
+------------
+
+[Order Now](#order)
+
+₹ 150 ![img](/images/p-4.jpg)
+
+Tasty Cupcake
+-------------
+
+[Order Now](#order)
+
+₹ 150 ![img](/images/p-5.jpg)
+
+Cold Drinks
+-----------
+
+[Order Now](#order)
+
+₹ 99 ![img](/images/p-6.jpg)
+
+Cold Ice-Cream
+--------------
+
+[Order Now](#order)
+
+How It Works
+============
+
+![](/images/step-1.jpg)
+
+##### Choose Your
+
+##### Favourite Food
+
+![](/images/step-2.jpg)
+
+##### Free and Fast
+
+##### Delivery
+
+![](/images/step-3.jpg)
+
+##### Easy Payment
+
+##### Methods
+
+![](/images/step-4.jpg)
+
+##### And, Enjoy Your
+
+##### Foood
+
+Our Food Gallery
+================
+
+![](/images/g-1.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-2.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-3.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-4.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-5.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-6.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order#order)
+
+![](/images/g-7.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-8.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+![](/images/g-9.jpg)
+
+### Tasty Food
+
+Lorem it sed iste placeat eos corporis odit at cum dignissimos architecto.
+
+[Order Now](#order)
+
+Our Customers Review
+====================
+
+![](/images/pic1.png)
+
+### Gorgino Bale
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem, inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!
+
+![](/images/pic2.png)
+
+### Danilo Parera
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem, inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!
+
+![](/images/pic3.png)
+
+### Luca Modric
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem, inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!
+
+Order Now
+=========
+
+![](/images/order-img.jpg)
+
+Looks good!
+
+Please provide a valid number.
+
+Order Now
+
+Facebook
+
+Linkedin
+
+Github
+
+Instagram
+
+Behance
+
+Twitter
+
+### Created by Adil Shabab || All Right Reserved
+
+/\*! \* \* typed.js - A JavaScript Typing Animation Library \* Author: Matt Boldt <me@mattboldt.com> \* Version: v2.0.12 \* Url: https://github.com/mattboldt/typed.js \* License(s): MIT \* \*/ (function webpackUniversalModuleDefinition(root, factory) { if(typeof exports === 'object' && typeof module === 'object') module.exports = factory(); else if(typeof define === 'function' && define.amd) define(\[\], factory); else if(typeof exports === 'object') exports\["Typed"\] = factory(); else root\["Typed"\] = factory(); })(this, function() { return /\*\*\*\*\*\*/ (function(modules) { // webpackBootstrap /\*\*\*\*\*\*/ // The module cache /\*\*\*\*\*\*/ var installedModules = {}; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // The require function /\*\*\*\*\*\*/ function \_\_webpack\_require\_\_(moduleId) { /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // Check if module is in cache /\*\*\*\*\*\*/ if(installedModules\[moduleId\]) /\*\*\*\*\*\*/ return installedModules\[moduleId\].exports; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // Create a new module (and put it into the cache) /\*\*\*\*\*\*/ var module = installedModules\[moduleId\] = { /\*\*\*\*\*\*/ exports: {}, /\*\*\*\*\*\*/ id: moduleId, /\*\*\*\*\*\*/ loaded: false /\*\*\*\*\*\*/ }; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // Execute the module function /\*\*\*\*\*\*/ modules\[moduleId\].call(module.exports, module, module.exports, \_\_webpack\_require\_\_); /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // Flag the module as loaded /\*\*\*\*\*\*/ module.loaded = true; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // Return the exports of the module /\*\*\*\*\*\*/ return module.exports; /\*\*\*\*\*\*/ } /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // expose the modules object (\_\_webpack\_modules\_\_) /\*\*\*\*\*\*/ \_\_webpack\_require\_\_.m = modules; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // expose the module cache /\*\*\*\*\*\*/ \_\_webpack\_require\_\_.c = installedModules; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // \_\_webpack\_public\_path\_\_ /\*\*\*\*\*\*/ \_\_webpack\_require\_\_.p = ""; /\*\*\*\*\*\*/ /\*\*\*\*\*\*/ // Load entry module and return exports /\*\*\*\*\*\*/ return \_\_webpack\_require\_\_(0); /\*\*\*\*\*\*/ }) /\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*/ /\*\*\*\*\*\*/ (\[ /\* 0 \*/ /\*\*\*/ (function(module, exports, \_\_webpack\_require\_\_) { 'use strict'; Object.defineProperty(exports, '\_\_esModule', { value: true }); var \_createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props\[i\]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })(); function \_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } } var \_initializerJs = \_\_webpack\_require\_\_(1); var \_htmlParserJs = \_\_webpack\_require\_\_(3); /\*\* \* Welcome to Typed.js! \* @param {string} elementId HTML element ID \_OR\_ HTML element \* @param {object} options options object \* @returns {object} a new Typed object \*/ var Typed = (function () { function Typed(elementId, options) { \_classCallCheck(this, Typed); // Initialize it up \_initializerJs.initializer.load(this, options, elementId); // All systems go! this.begin(); } /\*\* \* Toggle start() and stop() of the Typed instance \* @public \*/ \_createClass(Typed, \[{ key: 'toggle', value: function toggle() { this.pause.status ? this.start() : this.stop(); } /\*\* \* Stop typing / backspacing and enable cursor blinking \* @public \*/ }, { key: 'stop', value: function stop() { if (this.typingComplete) return; if (this.pause.status) return; this.toggleBlinking(true); this.pause.status = true; this.options.onStop(this.arrayPos, this); } /\*\* \* Start typing / backspacing after being stopped \* @public \*/ }, { key: 'start', value: function start() { if (this.typingComplete) return; if (!this.pause.status) return; this.pause.status = false; if (this.pause.typewrite) { this.typewrite(this.pause.curString, this.pause.curStrPos); } else { this.backspace(this.pause.curString, this.pause.curStrPos); } this.options.onStart(this.arrayPos, this); } /\*\* \* Destroy this instance of Typed \* @public \*/ }, { key: 'destroy', value: function destroy() { this.reset(false); this.options.onDestroy(this); } /\*\* \* Reset Typed and optionally restarts \* @param {boolean} restart \* @public \*/ }, { key: 'reset', value: function reset() { var restart = arguments.length <= 0 || arguments\[0\] === undefined ? true : arguments\[0\]; clearInterval(this.timeout); this.replaceText(''); if (this.cursor && this.cursor.parentNode) { this.cursor.parentNode.removeChild(this.cursor); this.cursor = null; } this.strPos = 0; this.arrayPos = 0; this.curLoop = 0; if (restart) { this.insertCursor(); this.options.onReset(this); this.begin(); } } /\*\* \* Begins the typing animation \* @private \*/ }, { key: 'begin', value: function begin() { var \_this = this; this.options.onBegin(this); this.typingComplete = false; this.shuffleStringsIfNeeded(this); this.insertCursor(); if (this.bindInputFocusEvents) this.bindFocusEvents(); this.timeout = setTimeout(function () { // Check if there is some text in the element, if yes start by backspacing the default message if (!\_this.currentElContent || \_this.currentElContent.length === 0) { \_this.typewrite(\_this.strings\[\_this.sequence\[\_this.arrayPos\]\], \_this.strPos); } else { // Start typing \_this.backspace(\_this.currentElContent, \_this.currentElContent.length); } }, this.startDelay); } /\*\* \* Called for each character typed \* @param {string} curString the current string in the strings array \* @param {number} curStrPos the current position in the curString \* @private \*/ }, { key: 'typewrite', value: function typewrite(curString, curStrPos) { var \_this2 = this; if (this.fadeOut && this.el.classList.contains(this.fadeOutClass)) { this.el.classList.remove(this.fadeOutClass); if (this.cursor) this.cursor.classList.remove(this.fadeOutClass); } var humanize = this.humanizer(this.typeSpeed); var numChars = 1; if (this.pause.status === true) { this.setPauseStatus(curString, curStrPos, true); return; } // contain typing function in a timeout humanize'd delay this.timeout = setTimeout(function () { // skip over any HTML chars curStrPos = \_htmlParserJs.htmlParser.typeHtmlChars(curString, curStrPos, \_this2); var pauseTime = 0; var substr = curString.substr(curStrPos); // check for an escape character before a pause value // format: \\^\\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^ // single ^ are removed from string if (substr.charAt(0) === '^') { if (/^\\^\\d+/.test(substr)) { var skip = 1; // skip at least 1 substr = /\\d+/.exec(substr)\[0\]; skip += substr.length; pauseTime = parseInt(substr); \_this2.temporaryPause = true; \_this2.options.onTypingPaused(\_this2.arrayPos, \_this2); // strip out the escape character and pause value so they're not printed curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip); \_this2.toggleBlinking(true); } } // check for skip characters formatted as // "this is a \`string to print NOW\` ..." if (substr.charAt(0) === '\`') { while (curString.substr(curStrPos + numChars).charAt(0) !== '\`') { numChars++; if (curStrPos + numChars > curString.length) break; } // strip out the escape characters and append all the string in between var stringBeforeSkip = curString.substring(0, curStrPos); var stringSkipped = curString.substring(stringBeforeSkip.length + 1, curStrPos + numChars); var stringAfterSkip = curString.substring(curStrPos + numChars + 1); curString = stringBeforeSkip + stringSkipped + stringAfterSkip; numChars--; } // timeout for any pause after a character \_this2.timeout = setTimeout(function () { // Accounts for blinking while paused \_this2.toggleBlinking(false); // We're done with this sentence! if (curStrPos >= curString.length) { \_this2.doneTyping(curString, curStrPos); } else { \_this2.keepTyping(curString, curStrPos, numChars); } // end of character pause if (\_this2.temporaryPause) { \_this2.temporaryPause = false; \_this2.options.onTypingResumed(\_this2.arrayPos, \_this2); } }, pauseTime); // humanized value for typing }, humanize); } /\*\* \* Continue to the next string & begin typing \* @param {string} curString the current string in the strings array \* @param {number} curStrPos the current position in the curString \* @private \*/ }, { key: 'keepTyping', value: function keepTyping(curString, curStrPos, numChars) { // call before functions if applicable if (curStrPos === 0) { this.toggleBlinking(false); this.options.preStringTyped(this.arrayPos, this); } // start typing each new char into existing string // curString: arg, this.el.html: original text inside element curStrPos += numChars; var nextString = curString.substr(0, curStrPos); this.replaceText(nextString); // loop the function this.typewrite(curString, curStrPos); } /\*\* \* We're done typing the current string \* @param {string} curString the current string in the strings array \* @param {number} curStrPos the current position in the curString \* @private \*/ }, { key: 'doneTyping', value: function doneTyping(curString, curStrPos) { var \_this3 = this; // fires callback function this.options.onStringTyped(this.arrayPos, this); this.toggleBlinking(true); // is this the final string if (this.arrayPos === this.strings.length - 1) { // callback that occurs on the last typed string this.complete(); // quit if we wont loop back if (this.loop === false || this.curLoop === this.loopCount) { return; } } this.timeout = setTimeout(function () { \_this3.backspace(curString, curStrPos); }, this.backDelay); } /\*\* \* Backspaces 1 character at a time \* @param {string} curString the current string in the strings array \* @param {number} curStrPos the current position in the curString \* @private \*/ }, { key: 'backspace', value: function backspace(curString, curStrPos) { var \_this4 = this; if (this.pause.status === true) { this.setPauseStatus(curString, curStrPos, false); return; } if (this.fadeOut) return this.initFadeOut(); this.toggleBlinking(false); var humanize = this.humanizer(this.backSpeed); this.timeout = setTimeout(function () { curStrPos = \_htmlParserJs.htmlParser.backSpaceHtmlChars(curString, curStrPos, \_this4); // replace text with base text + typed characters var curStringAtPosition = curString.substr(0, curStrPos); \_this4.replaceText(curStringAtPosition); // if smartBack is enabled if (\_this4.smartBackspace) { // the remaining part of the current string is equal of the same part of the new string var nextString = \_this4.strings\[\_this4.arrayPos + 1\]; if (nextString && curStringAtPosition === nextString.substr(0, curStrPos)) { \_this4.stopNum = curStrPos; } else { \_this4.stopNum = 0; } } // if the number (id of character in current string) is // less than the stop number, keep going if (curStrPos > \_this4.stopNum) { // subtract characters one by one curStrPos--; // loop the function \_this4.backspace(curString, curStrPos); } else if (curStrPos <= \_this4.stopNum) { // if the stop number has been reached, increase // array position to next string \_this4.arrayPos++; // When looping, begin at the beginning after backspace complete if (\_this4.arrayPos === \_this4.strings.length) { \_this4.arrayPos = 0; \_this4.options.onLastStringBackspaced(); \_this4.shuffleStringsIfNeeded(); \_this4.begin(); } else { \_this4.typewrite(\_this4.strings\[\_this4.sequence\[\_this4.arrayPos\]\], curStrPos); } } // humanized value for typing }, humanize); } /\*\* \* Full animation is complete \* @private \*/ }, { key: 'complete', value: function complete() { this.options.onComplete(this); if (this.loop) { this.curLoop++; } else { this.typingComplete = true; } } /\*\* \* Has the typing been stopped \* @param {string} curString the current string in the strings array \* @param {number} curStrPos the current position in the curString \* @param {boolean} isTyping \* @private \*/ }, { key: 'setPauseStatus', value: function setPauseStatus(curString, curStrPos, isTyping) { this.pause.typewrite = isTyping; this.pause.curString = curString; this.pause.curStrPos = curStrPos; } /\*\* \* Toggle the blinking cursor \* @param {boolean} isBlinking \* @private \*/ }, { key: 'toggleBlinking', value: function toggleBlinking(isBlinking) { if (!this.cursor) return; // if in paused state, don't toggle blinking a 2nd time if (this.pause.status) return; if (this.cursorBlinking === isBlinking) return; this.cursorBlinking = isBlinking; if (isBlinking) { this.cursor.classList.add('typed-cursor--blink'); } else { this.cursor.classList.remove('typed-cursor--blink'); } } /\*\* \* Speed in MS to type \* @param {number} speed \* @private \*/ }, { key: 'humanizer', value: function humanizer(speed) { return Math.round(Math.random() \* speed / 2) + speed; } /\*\* \* Shuffle the sequence of the strings array \* @private \*/ }, { key: 'shuffleStringsIfNeeded', value: function shuffleStringsIfNeeded() { if (!this.shuffle) return; this.sequence = this.sequence.sort(function () { return Math.random() - 0.5; }); } /\*\* \* Adds a CSS class to fade out current string \* @private \*/ }, { key: 'initFadeOut', value: function initFadeOut() { var \_this5 = this; this.el.className += ' ' + this.fadeOutClass; if (this.cursor) this.cursor.className += ' ' + this.fadeOutClass; return setTimeout(function () { \_this5.arrayPos++; \_this5.replaceText(''); // Resets current string if end of loop reached if (\_this5.strings.length > \_this5.arrayPos) { \_this5.typewrite(\_this5.strings\[\_this5.sequence\[\_this5.arrayPos\]\], 0); } else { \_this5.typewrite(\_this5.strings\[0\], 0); \_this5.arrayPos = 0; } }, this.fadeOutDelay); } /\*\* \* Replaces current text in the HTML element \* depending on element type \* @param {string} str \* @private \*/ }, { key: 'replaceText', value: function replaceText(str) { if (this.attr) { this.el.setAttribute(this.attr, str); } else { if (this.isInput) { this.el.value = str; } else if (this.contentType === 'html') { this.el.innerHTML = str; } else { this.el.textContent = str; } } } /\*\* \* If using input elements, bind focus in order to \* start and stop the animation \* @private \*/ }, { key: 'bindFocusEvents', value: function bindFocusEvents() { var \_this6 = this; if (!this.isInput) return; this.el.addEventListener('focus', function (e) { \_this6.stop(); }); this.el.addEventListener('blur', function (e) { if (\_this6.el.value && \_this6.el.value.length !== 0) { return; } \_this6.start(); }); } /\*\* \* On init, insert the cursor element \* @private \*/ }, { key: 'insertCursor', value: function insertCursor() { if (!this.showCursor) return; if (this.cursor) return; this.cursor = document.createElement('span'); this.cursor.className = 'typed-cursor'; this.cursor.setAttribute('aria-hidden', true); this.cursor.innerHTML = this.cursorChar; this.el.parentNode && this.el.parentNode.insertBefore(this.cursor, this.el.nextSibling); } }\]); return Typed; })(); exports\['default'\] = Typed; module.exports = exports\['default'\]; /\*\*\*/ }), /\* 1 \*/ /\*\*\*/ (function(module, exports, \_\_webpack\_require\_\_) { 'use strict'; Object.defineProperty(exports, '\_\_esModule', { value: true }); var \_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments\[i\]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target\[key\] = source\[key\]; } } } return target; }; var \_createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props\[i\]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })(); function \_interopRequireDefault(obj) { return obj && obj.\_\_esModule ? obj : { 'default': obj }; } function \_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } } var \_defaultsJs = \_\_webpack\_require\_\_(2); var \_defaultsJs2 = \_interopRequireDefault(\_defaultsJs); /\*\* \* Initialize the Typed object \*/ var Initializer = (function () { function Initializer() { \_classCallCheck(this, Initializer); } \_createClass(Initializer, \[{ key: 'load', /\*\* \* Load up defaults & options on the Typed instance \* @param {Typed} self instance of Typed \* @param {object} options options object \* @param {string} elementId HTML element ID \_OR\_ instance of HTML element \* @private \*/ value: function load(self, options, elementId) { // chosen element to manipulate text if (typeof elementId === 'string') { self.el = document.querySelector(elementId); } else { self.el = elementId; } self.options = \_extends({}, \_defaultsJs2\['default'\], options); // attribute to type into self.isInput = self.el.tagName.toLowerCase() === 'input'; self.attr = self.options.attr; self.bindInputFocusEvents = self.options.bindInputFocusEvents; // show cursor self.showCursor = self.isInput ? false : self.options.showCursor; // custom cursor self.cursorChar = self.options.cursorChar; // Is the cursor blinking self.cursorBlinking = true; // text content of element self.elContent = self.attr ? self.el.getAttribute(self.attr) : self.el.textContent; // html or plain text self.contentType = self.options.contentType; // typing speed self.typeSpeed = self.options.typeSpeed; // add a delay before typing starts self.startDelay = self.options.startDelay; // backspacing speed self.backSpeed = self.options.backSpeed; // only backspace what doesn't match the previous string self.smartBackspace = self.options.smartBackspace; // amount of time to wait before backspacing self.backDelay = self.options.backDelay; // Fade out instead of backspace self.fadeOut = self.options.fadeOut; self.fadeOutClass = self.options.fadeOutClass; self.fadeOutDelay = self.options.fadeOutDelay; // variable to check whether typing is currently paused self.isPaused = false; // input strings of text self.strings = self.options.strings.map(function (s) { return s.trim(); }); // div containing strings if (typeof self.options.stringsElement === 'string') { self.stringsElement = document.querySelector(self.options.stringsElement); } else { self.stringsElement = self.options.stringsElement; } if (self.stringsElement) { self.strings = \[\]; self.stringsElement.style.display = 'none'; var strings = Array.prototype.slice.apply(self.stringsElement.children); var stringsLength = strings.length; if (stringsLength) { for (var i = 0; i < stringsLength; i += 1) { var stringEl = strings\[i\]; self.strings.push(stringEl.innerHTML.trim()); } } } // character number position of current string self.strPos = 0; // current array position self.arrayPos = 0; // index of string to stop backspacing on self.stopNum = 0; // Looping logic self.loop = self.options.loop; self.loopCount = self.options.loopCount; self.curLoop = 0; // shuffle the strings self.shuffle = self.options.shuffle; // the order of strings self.sequence = \[\]; self.pause = { status: false, typewrite: true, curString: '', curStrPos: 0 }; // When the typing is complete (when not looped) self.typingComplete = false; // Set the order in which the strings are typed for (var i in self.strings) { self.sequence\[i\] = i; } // If there is some text in the element self.currentElContent = this.getCurrentElContent(self); self.autoInsertCss = self.options.autoInsertCss; this.appendAnimationCss(self); } }, { key: 'getCurrentElContent', value: function getCurrentElContent(self) { var elContent = ''; if (self.attr) { elContent = self.el.getAttribute(self.attr); } else if (self.isInput) { elContent = self.el.value; } else if (self.contentType === 'html') { elContent = self.el.innerHTML; } else { elContent = self.el.textContent; } return elContent; } }, { key: 'appendAnimationCss', value: function appendAnimationCss(self) { var cssDataName = 'data-typed-js-css'; if (!self.autoInsertCss) { return; } if (!self.showCursor && !self.fadeOut) { return; } if (document.querySelector('\[' + cssDataName + '\]')) { return; } var css = document.createElement('style'); css.type = 'text/css'; css.setAttribute(cssDataName, true); var innerCss = ''; if (self.showCursor) { innerCss += '\\n .typed-cursor{\\n opacity: 1;\\n }\\n .typed-cursor.typed-cursor--blink{\\n animation: typedjsBlink 0.7s infinite;\\n -webkit-animation: typedjsBlink 0.7s infinite;\\n animation: typedjsBlink 0.7s infinite;\\n }\\n @keyframes typedjsBlink{\\n 50% { opacity: 0.0; }\\n }\\n @-webkit-keyframes typedjsBlink{\\n 0% { opacity: 1; }\\n 50% { opacity: 0.0; }\\n 100% { opacity: 1; }\\n }\\n '; } if (self.fadeOut) { innerCss += '\\n .typed-fade-out{\\n opacity: 0;\\n transition: opacity .25s;\\n }\\n .typed-cursor.typed-cursor--blink.typed-fade-out{\\n -webkit-animation: 0;\\n animation: 0;\\n }\\n '; } if (css.length === 0) { return; } css.innerHTML = innerCss; document.body.appendChild(css); } }\]); return Initializer; })(); exports\['default'\] = Initializer; var initializer = new Initializer(); exports.initializer = initializer; /\*\*\*/ }), /\* 2 \*/ /\*\*\*/ (function(module, exports) { /\*\* \* Defaults & options \* @returns {object} Typed defaults & options \* @public \*/ 'use strict'; Object.defineProperty(exports, '\_\_esModule', { value: true }); var defaults = { /\*\* \* @property {array} strings strings to be typed \* @property {string} stringsElement ID of element containing string children \*/ strings: \['These are the default values...', 'You know what you should do?', 'Use your own!', 'Have a great day!'\], stringsElement: null, /\*\* \* @property {number} typeSpeed type speed in milliseconds \*/ typeSpeed: 0, /\*\* \* @property {number} startDelay time before typing starts in milliseconds \*/ startDelay: 0, /\*\* \* @property {number} backSpeed backspacing speed in milliseconds \*/ backSpeed: 0, /\*\* \* @property {boolean} smartBackspace only backspace what doesn't match the previous string \*/ smartBackspace: true, /\*\* \* @property {boolean} shuffle shuffle the strings \*/ shuffle: false, /\*\* \* @property {number} backDelay time before backspacing in milliseconds \*/ backDelay: 700, /\*\* \* @property {boolean} fadeOut Fade out instead of backspace \* @property {string} fadeOutClass css class for fade animation \* @property {boolean} fadeOutDelay Fade out delay in milliseconds \*/ fadeOut: false, fadeOutClass: 'typed-fade-out', fadeOutDelay: 500, /\*\* \* @property {boolean} loop loop strings \* @property {number} loopCount amount of loops \*/ loop: false, loopCount: Infinity, /\*\* \* @property {boolean} showCursor show cursor \* @property {string} cursorChar character for cursor \* @property {boolean} autoInsertCss insert CSS for cursor and fadeOut into HTML <head> \*/ showCursor: true, cursorChar: '|', autoInsertCss: true, /\*\* \* @property {string} attr attribute for typing \* Ex: input placeholder, value, or just HTML text \*/ attr: null, /\*\* \* @property {boolean} bindInputFocusEvents bind to focus and blur if el is text input \*/ bindInputFocusEvents: false, /\*\* \* @property {string} contentType 'html' or 'null' for plaintext \*/ contentType: 'html', /\*\* \* Before it begins typing \* @param {Typed} self \*/ onBegin: function onBegin(self) {}, /\*\* \* All typing is complete \* @param {Typed} self \*/ onComplete: function onComplete(self) {}, /\*\* \* Before each string is typed \* @param {number} arrayPos \* @param {Typed} self \*/ preStringTyped: function preStringTyped(arrayPos, self) {}, /\*\* \* After each string is typed \* @param {number} arrayPos \* @param {Typed} self \*/ onStringTyped: function onStringTyped(arrayPos, self) {}, /\*\* \* During looping, after last string is typed \* @param {Typed} self \*/ onLastStringBackspaced: function onLastStringBackspaced(self) {}, /\*\* \* Typing has been stopped \* @param {number} arrayPos \* @param {Typed} self \*/ onTypingPaused: function onTypingPaused(arrayPos, self) {}, /\*\* \* Typing has been started after being stopped \* @param {number} arrayPos \* @param {Typed} self \*/ onTypingResumed: function onTypingResumed(arrayPos, self) {}, /\*\* \* After reset \* @param {Typed} self \*/ onReset: function onReset(self) {}, /\*\* \* After stop \* @param {number} arrayPos \* @param {Typed} self \*/ onStop: function onStop(arrayPos, self) {}, /\*\* \* After start \* @param {number} arrayPos \* @param {Typed} self \*/ onStart: function onStart(arrayPos, self) {}, /\*\* \* After destroy \* @param {Typed} self \*/ onDestroy: function onDestroy(self) {} }; exports\['default'\] = defaults; module.exports = exports\['default'\]; /\*\*\*/ }), /\* 3 \*/ /\*\*\*/ (function(module, exports) { /\*\* \* TODO: These methods can probably be combined somehow \* Parse HTML tags & HTML Characters \*/ 'use strict'; Object.defineProperty(exports, '\_\_esModule', { value: true }); var \_createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props\[i\]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })(); function \_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } } var HTMLParser = (function () { function HTMLParser() { \_classCallCheck(this, HTMLParser); } \_createClass(HTMLParser, \[{ key: 'typeHtmlChars', /\*\* \* Type HTML tags & HTML Characters \* @param {string} curString Current string \* @param {number} curStrPos Position in current string \* @param {Typed} self instance of Typed \* @returns {number} a new string position \* @private \*/ value: function typeHtmlChars(curString, curStrPos, self) { if (self.contentType !== 'html') return curStrPos; var curChar = curString.substr(curStrPos).charAt(0); if (curChar === '<' || curChar === '&') { var endTag = ''; if (curChar === '<') { endTag = '>'; } else { endTag = ';'; } while (curString.substr(curStrPos + 1).charAt(0) !== endTag) { curStrPos++; if (curStrPos + 1 > curString.length) { break; } } curStrPos++; } return curStrPos; } /\*\* \* Backspace HTML tags and HTML Characters \* @param {string} curString Current string \* @param {number} curStrPos Position in current string \* @param {Typed} self instance of Typed \* @returns {number} a new string position \* @private \*/ }, { key: 'backSpaceHtmlChars', value: function backSpaceHtmlChars(curString, curStrPos, self) { if (self.contentType !== 'html') return curStrPos; var curChar = curString.substr(curStrPos).charAt(0); if (curChar === '>' || curChar === ';') { var endTag = ''; if (curChar === '>') { endTag = '<'; } else { endTag = '&'; } while (curString.substr(curStrPos - 1).charAt(0) !== endTag) { curStrPos--; if (curStrPos < 0) { break; } } curStrPos--; } return curStrPos; } }\]); return HTMLParser; })(); exports\['default'\] = HTMLParser; var htmlParser = new HTMLParser(); exports.htmlParser = htmlParser; /\*\*\*/ }) /\*\*\*\*\*\*/ \]) }); ; var typed = new Typed('.animate', { strings: \[ "Your Favourite Dishes", "In Your Door Step", "Order Now From Our Shop", "Enjoy Your Food" \], typeSpeed: 50, backSpeed: 50, loop: true }); function add() { document.querySelector('.box-1').classList.toggle('.active') }
