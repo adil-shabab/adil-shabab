@@ -14,7 +14,7 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adil-shabab&layout=compact" />
 
 
-<div>
+<div style="display: flex !important ;">
   
 <a style="display: inline;" href="https://www.instagram.com/adil___shabab_/" >![instagram](https://user-images.githubusercontent.com/101416092/184023499-e626622a-9f13-44f5-bce5-cd546e995166.png)</a>
 
