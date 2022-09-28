@@ -20,8 +20,6 @@
 
 
 
-
-<div align="center">
   
   <div style="display: flex;">
     
@@ -32,4 +30,4 @@
     
     
   </div>
-</div>
+
