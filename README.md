@@ -15,13 +15,13 @@
 
 
 
-  
+  <div>
 <a style="display: inline;" href="https://www.instagram.com/adil___shabab_/" >![instagram](https://user-images.githubusercontent.com/101416092/184023499-e626622a-9f13-44f5-bce5-cd546e995166.png)</a>
 
 <a style="display: inline;"  href="https://www.linkedin.com/in/adil-shabab-1948b2233/" >![linkedin](https://user-images.githubusercontent.com/101416092/184024571-46ac68aa-eb3a-4476-b06c-90e7017f280a.png)</a>
 
 <a style="display: inline;"  href="https://github.com/adil-shabab" >![github](https://user-images.githubusercontent.com/101416092/184024902-37af6ead-6ed5-44e5-8496-642653831c70.png)</a>
 
-
+</div>
 
 
