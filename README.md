@@ -14,7 +14,7 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adil-shabab&layout=compact" />
 
 
-<div style="display: flex !important ;">
+
   
 <a  href="https://www.instagram.com/adil___shabab_/" >![instagram](https://user-images.githubusercontent.com/101416092/184023499-e626622a-9f13-44f5-bce5-cd546e995166.png)</a>
 
@@ -22,6 +22,5 @@
 
 <a  href="https://github.com/adil-shabab" >![github](https://user-images.githubusercontent.com/101416092/184024902-37af6ead-6ed5-44e5-8496-642653831c70.png)</a>
 
-</div>
 
 
