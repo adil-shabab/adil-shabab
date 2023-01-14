@@ -16,7 +16,7 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-999?style=flat&logo=javascript)&nbsp;
 ![Git](https://img.shields.io/badge/-Git-ccc?style=flat&logo=git&logoColor=red)&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=github&logoColor=black)&nbsp;
-![GitHub](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=django&logoColor=black)&nbsp;
+![Django](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=django&logoColor=green)&nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/-V%20S%20Code-ccc?style=flat&logo=visual-studio-code&logoColor=blue)&nbsp;
 
 
