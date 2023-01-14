@@ -21,7 +21,7 @@
 
 
 ![Bootstrap](https://img.shields.io/badge/-bootstrap-ccc?style=flat&logo=bootstrap&logoColor=blue)&nbsp;
-![Laravel](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=laravel&logoColor=blue)&nbsp;
+![Laravel](https://img.shields.io/badge/-Laravel-ccc?style=flat&logo=laravel&logoColor=blue)&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySql-ccc?style=flat&logo=mysql&logoColor=black)&nbsp;
 ![Python](https://img.shields.io/badge/-python-ccc?style=flat&logo=python&logoColor=blue)&nbsp;
 ![PHP](https://img.shields.io/badge/-PHP-ccc?style=flat&logo=php&logoColor=bluedark)&nbsp;
