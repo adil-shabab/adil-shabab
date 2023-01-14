@@ -16,13 +16,13 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-999?style=flat&logo=javascript)&nbsp;
 ![Git](https://img.shields.io/badge/-Git-ccc?style=flat&logo=git&logoColor=red)&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=github&logoColor=black)&nbsp;
-![Django](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=django&logoColor=black)&nbsp;
+![Django](https://img.shields.io/badge/-Django-ccc?style=flat&logo=django&logoColor=black)&nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/-V%20S%20Code-ccc?style=flat&logo=visual-studio-code&logoColor=blue)&nbsp;
 
 
 ![Bootstrap](https://img.shields.io/badge/-bootstrap-ccc?style=flat&logo=bootstrap&logoColor=blue)&nbsp;
 ![Laravel](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=laravel&logoColor=blue)&nbsp;
-![SQL](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=mysql&logoColor=black)&nbsp;
+![MySQL](https://img.shields.io/badge/-MySql-ccc?style=flat&logo=mysql&logoColor=black)&nbsp;
 ![Python](https://img.shields.io/badge/-python-ccc?style=flat&logo=python&logoColor=blue)&nbsp;
 ![PHP](https://img.shields.io/badge/-PHP-ccc?style=flat&logo=php&logoColor=bluedark)&nbsp;
 ![Xammp](https://img.shields.io/badge/-Xampp-ccc?style=flat&logo=Xampp&logoColor=#FB7923)&nbsp;
