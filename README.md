@@ -22,7 +22,7 @@
 
 ![Bootstrap](https://img.shields.io/badge/-bootstrap-ccc?style=flat&logo=bootstrap&logoColor=blue)&nbsp;
 ![Laravel](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=laravel&logoColor=blue)&nbsp;
-![SQL](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=sql&logoColor=black)&nbsp;
+![SQL](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=mysql&logoColor=black)&nbsp;
 ![Python](https://img.shields.io/badge/-python-ccc?style=flat&logo=python&logoColor=blue)&nbsp;
 ![PHP](https://img.shields.io/badge/-PHP-ccc?style=flat&logo=php&logoColor=bluedark)&nbsp;
 ![Xammp](https://img.shields.io/badge/-Xampp-ccc?style=flat&logo=Xampp&logoColor=#FB7923)&nbsp;
