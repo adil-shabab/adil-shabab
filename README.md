@@ -3,7 +3,7 @@
 
 - 🔭 I'm currently working at Mentegoz Technologies located in Calicut as Full-Stack-developer
 - 🔭 I’m completed  six months of internship from techolas technologies pvt ltd
-- 🌱 I’m currently doing my graduation from bharathidasan university in bsc
+- 🌱 I’m currently doing my graduation from Indira gandhi national open university in bsc
 
 
 
