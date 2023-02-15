@@ -50,3 +50,9 @@
 <a href="https://www.linkedin.com/in/adil-shabab-1948b2233/" >![linkedin](https://user-images.githubusercontent.com/101416092/184024571-46ac68aa-eb3a-4476-b06c-90e7017f280a.png)</a>
 <a  href="https://github.com/adil-shabab" >![github](https://user-images.githubusercontent.com/101416092/184024902-37af6ead-6ed5-44e5-8496-642653831c70.png)</a>
     
+
+
+
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=adil-shabab&show_icons=true&locale=en" alt="adil-shabab" /></p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=adil-shabab&label=Profile%20views&color=0e75b6&style=flat" alt="adil-shabab" /> </p>
