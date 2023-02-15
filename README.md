@@ -53,6 +53,4 @@
 
 
 
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=adil-shabab&show_icons=true&locale=en" alt="adil-shabab" /></p>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=adil-shabab&label=Profile%20views&color=0e75b6&style=flat" alt="adil-shabab" /> </p>
