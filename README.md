@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Mouse+Memoirs&size=65&pause=500&color=06CD9C&vCenter=true&width=600&height=70&lines=+Adil;Shabab;a+Full-Stack+Developer;UI%2FUX+Designer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Mouse+Memoirs&size=65&pause=500&color=06CD9C&vCenter=true&width=600&height=70&lines=+Adil Shabab;Full-Stack+Developer;UI%2FUX+Designer)](https://git.io/typing-svg)
 
 
 - 🔭 I'm currently working at Mentegoz Technologies located in Calicut as Full-Stack-developer
